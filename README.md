@@ -5,7 +5,7 @@ Resumen del proyecto
 
 Aplicación interactiva para el análisis exploratorio del dataset del Titanic. La aplicación está
 construida con Streamlit y contiene páginas para exploración de datos, visualizaciones y
-conclusiones. Está pensada como una demo educativa de EDA con visualizaciones interactivas (Plotly)
+conclusiones. Está pensada como una demo educativa de EDA con visualizaciones interactivas 
 y manipulación de datos con Pandas.
 
 Estado

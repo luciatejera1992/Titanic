@@ -1,4 +1,4 @@
-# Titanic — App de EDA interactiva (Streamlit)
+# Titanic — App interactiva (Streamlit)
 
 Resumen del proyecto
 --------------------

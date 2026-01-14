@@ -1,22 +1,46 @@
-# Titanic — App interactiva (Streamlit)
+# 🚢 Titanic — Aplicación interactiva de análisis de datos (Streamlit)
 
-Resumen del proyecto
---------------------
+Aplicación web interactiva desarrollada con **Streamlit** para realizar un **Análisis Exploratorio de Datos (EDA)** del dataset del Titanic.  
+El proyecto combina **Python, Pandas y Plotly** para explorar patrones de supervivencia, generar visualizaciones dinámicas y presentar conclusiones de forma clara y estructurada.
 
-Aplicación interactiva para el análisis exploratorio del dataset del Titanic. La aplicación está
-construida con Streamlit y contiene páginas para exploración de datos, visualizaciones y
-conclusiones. Está pensada como una demo educativa de EDA con visualizaciones interactivas 
-y manipulación de datos con Pandas.
+Este repositorio forma parte de mi portfolio como **Analista de Datos Junior**, con foco en análisis, visualización y comunicación de insights mediante aplicaciones interactivas.
 
-Estado
-------
+---
 
-- Implementación principal en `Titanic:Streamlit/app.py` (interfaz y navegación).
-- Páginas modulares en `Titanic:Streamlit/Paginas/` (Inicio, Análisis, Resultados, Conclusiones).
-- Configuración centralizada en `Titanic:Streamlit/utils/configuracion.py`.
-- Carga de datos en `Titanic:Streamlit/utils/data_loader.py` (usa `@st.cache_data`).
+## 📌 Resumen del proyecto
 
-Estructura importante
+- Aplicación web multipágina construida con Streamlit.
+- Análisis exploratorio del dataset del Titanic.
+- Visualizaciones interactivas orientadas a la interpretación de resultados.
+- Arquitectura modular y reutilizable.
+- Uso de buenas prácticas: cacheo de datos, separación de lógica y configuración centralizada.
+
+---
+
+## 🎯 Objetivos
+
+- Explorar los factores que influyen en la supervivencia de los pasajeros.
+- Analizar variables demográficas y socioeconómicas.
+- Crear visualizaciones interactivas para facilitar la comprensión de los datos.
+- Presentar conclusiones claras y reproducibles.
+- Demostrar el uso de Streamlit como herramienta de análisis y storytelling con datos.
+
+---
+
+## 🧰 Tecnologías y herramientas
+
+- **Python 3.10+**
+- **Streamlit** — interfaz web interactiva
+- **pandas** — manipulación y transformación de datos
+- **numpy** — cálculos numéricos
+- **plotly** — visualizaciones interactivas
+- **Git / GitHub** — control de versiones y documentación
+
+---
+
+## 📁 Estructura del proyecto
+
+
 ---------------------
 
 Rutas clave (desde la raíz del repo):
@@ -68,9 +92,63 @@ Nota: la carpeta del proyecto de la app contiene dos puntos (`Titanic:Streamlit`
 Detalles y convenciones del proyecto
 ----------------------------------
 
-- Las páginas son modulares: `app.py` importa y llama a funciones `render_*_page(df)` desde `Paginas/*` según la selección del sidebar.
-- `utils/configuracion.py` contiene la paleta de colores (`COLORS`) y mapeo de nombres de columnas (`COLUMN_DISPLAY_NAMES`). Cualquier cambio de estilo o traducción debe hacerse ahí para que afecte a toda la app.
-- `utils/data_loader.py` usa `Path(__file__).parent.parent / 'data/titanic_combined.csv'` y está decorado con `@st.cache_data` para evitar recargas de I/O en cada refresh.
-- Las visualizaciones usan Plotly (px y graph_objects). Para mantener consistencia de color, usa `COLORS` definido en configuración.
-- Las transformaciones derivadas (p. ej. `FamilySize`, `FamilyCategory`, extracción de `TITLE`) se realizan en las páginas antes de las visualizaciones; mantener esas transformaciones idempotentes ayuda con el cacheado y la reproducibilidad.
+Arquitectura multipágina:
+app.py gestiona la navegación y llama a funciones render_*_page(df) definidas en cada archivo de Paginas/.
+
+Configuración centralizada:
+utils/configuracion.py contiene constantes globales como:
+PAGE_CONFIG
+COLORS
+COLUMN_DISPLAY_NAMES
+Esto permite mantener consistencia visual y facilitar cambios globales.
+Carga eficiente de datos:
+utils/data_loader.py utiliza @st.cache_data para evitar recargas innecesarias del dataset y mejorar el rendimiento.
+
+Visualizaciones:
+Implementadas con Plotly (plotly.express y graph_objects).
+La paleta de colores se mantiene consistente usando las constantes definidas en configuración.
+
+Transformaciones de datos:
+Variables derivadas (por ejemplo, FamilySize, FamilyCategory, extracción de Title) se calculan dentro de las páginas antes de las visualizaciones, manteniendo transformaciones idempotentes y reproducibles.
+
+📊 Análisis Realizado
+
+Distribución de supervivencia por sexo y clase.
+
+Análisis de edad y tarifas.
+
+Impacto del tamaño del grupo familiar.
+
+Comparativa entre variables categóricas y numéricas.
+
+Visualización de patrones relevantes para la supervivencia.
+
+📈 Conclusiones
+
+La clase social y el sexo influyen significativamente en la probabilidad de supervivencia.
+
+Existen diferencias claras en supervivencia según rangos de edad.
+
+El tamaño del grupo familiar presenta patrones interesantes en los resultados.
+
+Las conclusiones completas están documentadas dentro de la aplicación y sus visualizaciones interactivas.
+
+💡 Posibles Mejoras Futuras
+
+Incorporar modelos predictivos básicos.
+
+Publicar la app en Streamlit Cloud.
+
+Añadir filtros avanzados y comparativas dinámicas.
+
+Integrar nuevas fuentes de datos.
+
+---
+
+Lucía Tejera
+
+Analista de Datos Junior
+
+LinkedIn: https://linkedin.com/in/tu-perfil
+
 

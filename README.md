@@ -133,15 +133,6 @@ El tamaño del grupo familiar presenta patrones interesantes en los resultados.
 
 Las conclusiones completas están documentadas dentro de la aplicación y sus visualizaciones interactivas.
 
-💡 Posibles Mejoras Futuras
-
-Incorporar modelos predictivos básicos.
-
-Publicar la app en Streamlit Cloud.
-
-Añadir filtros avanzados y comparativas dinámicas.
-
-Integrar nuevas fuentes de datos.
 
 ---
 

@@ -126,7 +126,7 @@ Las conclusiones completas están documentadas dentro de la aplicación y sus vi
 
 ## Vizualiza la App 
 
-[![View Streamlit App](https://img.shields.io/badge/View%20App-Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)](https://(http://localhost:8501/))
+[![View Streamlit App](https://img.shields.io/badge/View%20App-Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)](https://(http://localhost:8501/)
 
 ---
 

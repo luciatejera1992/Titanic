@@ -27,7 +27,7 @@ Este repositorio forma parte de mi portfolio como **Analista de Datos Junior**, 
 
 ---
 
-## 🧰 Tecnologías y herramientas
+##  Tecnologías y herramientas
 
 - **Python 3.10+**
 - **Streamlit** — interfaz web interactiva
@@ -38,7 +38,7 @@ Este repositorio forma parte de mi portfolio como **Analista de Datos Junior**, 
 
 ---
 
-## 📁 Estructura del proyecto
+##  Estructura del proyecto
 
 
 ---------------------
@@ -53,7 +53,6 @@ Rutas clave (desde la raíz del repo):
 
 Dependencias
 -------------
-
 La app requiere al menos:
 
 - Python 3.10+ (se recomienda usar un virtualenv o venv)
@@ -106,7 +105,6 @@ utils/data_loader.py utiliza @st.cache_data para evitar recargas innecesarias de
 
 Visualizaciones:
 Implementadas con Plotly (plotly.express y graph_objects).
-La paleta de colores se mantiene consistente usando las constantes definidas en configuración.
 
 Transformaciones de datos:
 Variables derivadas (por ejemplo, FamilySize, FamilyCategory, extracción de Title) se calculan dentro de las páginas antes de las visualizaciones, manteniendo transformaciones idempotentes y reproducibles.
@@ -114,25 +112,21 @@ Variables derivadas (por ejemplo, FamilySize, FamilyCategory, extracción de Tit
 📊 Análisis Realizado
 
 Distribución de supervivencia por sexo y clase.
-
 Análisis de edad y tarifas.
-
 Impacto del tamaño del grupo familiar.
-
 Comparativa entre variables categóricas y numéricas.
-
 Visualización de patrones relevantes para la supervivencia.
 
 📈 Conclusiones
 
 La clase social y el sexo influyen significativamente en la probabilidad de supervivencia.
-
 Existen diferencias claras en supervivencia según rangos de edad.
-
 El tamaño del grupo familiar presenta patrones interesantes en los resultados.
-
 Las conclusiones completas están documentadas dentro de la aplicación y sus visualizaciones interactivas.
 
+## Vizualiza la App 
+
+[![View Streamlit App](https://img.shields.io/badge/View%20App-Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)](https://(http://localhost:8501/))
 
 ---
 

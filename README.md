@@ -126,7 +126,7 @@ Las conclusiones completas están documentadas dentro de la aplicación y sus vi
 
 ## Vizualiza la App 
 
-[![View Streamlit App](https://img.shields.io/badge/View%20App-Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)](https://[TU_APP_STREAMLIT_URL](https://titanic-pqdbjw6sjqwpeoyktdfzeb.streamlit.app/))
+[![View Streamlit App](https://img.shields.io/badge/View%20App-Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)](https://titanic-pqdbjw6sjqwpeoyktdfzeb.streamlit.app/)
 
 ---
 
